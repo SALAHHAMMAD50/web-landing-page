@@ -1,3 +1,94 @@
+.body {
+    
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    color: #555; /* لون النص */
+}
+
+.header {
+    background-color: #ffffff; /* لون خلفية الهيدر */
+    padding: 10px 20px; /* هوامش داخلية للهيدر */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo img {
+    max-height: 50px; /* حجم الشعار حسب الحاجة */
+    margin-left: 50%;
+}
+
+.header__nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: black;
+}
+
+.header__nav li {
+    margin: 0 10px;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: #fff; /* لون النص */
+    font-weight: bold;
+    font-size: 16px; /* حجم النص */
+    color: rgb(31, 33, 138);
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__nav {
+        margin-top: 10px;
+    }
+
+    .header__nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__nav li {
+        margin: 5px 0;
+    }
+}
+
+.section {
+    height: 50vh;
+    padding: 50px 0;
+    text-align: center;
+    background-image: url('../background.jpg'); /* استبدل 'background.jpg' بمسار الصورة الخاصة بك */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* لون النص على الخلفية */ /* استبدل 'background.jpg' بمسار الصورة الخاصة بك */
+
+}
+
+.section__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section__content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.section__content p {
+    font-size: 16px;
+    color: #555; /* لون النص */
+}
+
+
+
+
 footer {
     text-align: center;
     padding: 1%;
@@ -9,12 +100,6 @@ footer {
     left: 0;
     width: 100%;
     z-index: 1000;
-  }
-  .footer__content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
   }
   footer p {
     margin: 5px;

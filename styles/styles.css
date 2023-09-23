@@ -2,12 +2,13 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Oswald', sans-serif;
 }
 
 body {
     min-height: 100vh;
-    padding: 10vh;
+    
 }
 
 .container {
@@ -20,8 +21,9 @@ body {
 }
 
 .img-logo {
-    width: 130px;
+    width: 160px;
     cursor: pointer;
+    margin-left: -70px;
 }
 
 .img-logo img {
@@ -37,6 +39,8 @@ body {
 .icon {
     display: flex;
     cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .icon .background-icon {
@@ -66,13 +70,13 @@ body {
 /******** Header ********/
 
 .header {
-    background: rgba(0, 0, 0, 0.5) url(image/Header.jpg);
+    background-image: url(../image/worker.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-blend-mode: darken;
-    width: auto;
-    height: 650px;
+    width: 100%;
+    height: 600px;
     object-fit: cover;
 }
 
@@ -134,10 +138,10 @@ button {
 
 .navbar {
     position: absolute;
-    padding: 10px 0px;
+    padding: 8px 0px;
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 77%;
     box-sizing: border-box;
     background-color: #ffb343;
     top: -27px;
@@ -146,6 +150,7 @@ button {
 .navbar a {
     color: #000;
     text-decoration: none;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -160,7 +165,7 @@ button {
 }
 
 .navbar .nav-links ul li {
-    margin: 15px 30px 15px 10px;
+    margin: 15px 30px 15px 20px;
     font-size: 20px;
     list-style: none;
 }
@@ -217,8 +222,8 @@ button {
 }
 
 .about-left img {
-    width: 100%;
-    height: 100%;
+    width: 60vh;
+    height: 60vh;
     object-fit: cover;
 }
 
@@ -248,14 +253,14 @@ button {
 }
 
 .about-right h1 {
-    font-size: 37px;
+    font-size: 30px;
     font-weight: bolder;
 }
 
 .about-right p {
-    color: #acacac;
+    color: #919090;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .a-part-bottom {
@@ -285,8 +290,9 @@ button {
 
 .description p {
     line-height: 25px;
-    font-size: 13px;
+    font-size: 10px;
 }
+
 
 /******** services ********/
 
@@ -305,7 +311,7 @@ button {
 .icon-edit {
     background-color: #fff;
     padding-top: 10px;
-    width: 125px;
+    width: 150px;
     display: flex;
 }
 
